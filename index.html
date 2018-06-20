@@ -1,0 +1,133 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Kölner Kickerliga | currently offline</title>
+
+  <!-- .META -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="favicon" href="./images/favicon.ico">
+
+  <!-- .CSS -->
+  <style type="text/css">
+
+  html, body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    font-family: Cambria, Georgia, serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #313131;
+
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  * {
+    &,
+    &:before,
+    &:after {
+      box-sizing: inherit;
+    }
+  }
+
+  a {
+    color: #f00;
+    margin: 0 5px 0 0;
+  }
+
+  section {
+    position: relative;
+    padding: 20px;
+  }
+
+  .content {
+    background: #fff;
+    padding: 30px 60px 20px 60px;
+  }
+
+  @media (min-width: 813px) { 
+    section {
+      padding: 20vh;
+    }
+
+    .content {
+      width: 25vw;
+    }
+  }
+
+  .focuspoint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* !FOCUSED IMAGES */
+  /*-----------------------------------------*/
+  .focuspoint {
+    overflow: hidden;
+  }
+  .focuspoint img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: block;
+    /* fill and maintain aspect ratio */
+    width: auto; height: auto;
+    min-width: 100%; min-height: 100%;
+    max-height: none; max-width: none;
+  }
+  </style>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-focuspoint@1.1.3/js/jquery.focuspoint.min.js"></script>
+
+</head>
+<body class="kkl">
+
+<section>
+  <div class="content">
+    <img src="./images/kkl_logo_4c.png" alt="Kölner Kickerliga" height="40px"/>
+    <h1>Kleine Pause. Wir sind bald wieder für euch da!</h1>
+    <p>
+      Finde uns auch auf:<br />
+      <a href="https://www.facebook.com/kickerligakoeln" target="_self">Facebook</a>
+      <a href="https://twitter.com/kickerligakoeln" target="_self">Twitter</a>
+      <a href="https://www.instagram.com/explore/tags/kickerligakoeln/" target="_self">Instagram</a>
+      <a href="https://kkl.slack.com/" target="_self">Slack</a>
+    </p>
+  </div>
+</section>
+
+<div class="focuspoint" data-focus-x="0.26" data-focus-y="0.65" data-image-w="1350" data-image-h="900" >
+  <img src="./images/kickerligakoeln-background.jpg" alt="" />
+</div>
+
+
+<!-- .JS -->
+<script type="text/javascript">
+  jQuery(document).ready(function () {
+    jQuery('.focuspoint').focusPoint();
+  });
+</script>
+</body>
+</html>
